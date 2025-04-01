@@ -139,41 +139,11 @@ body {
       display: block;
     }
   }
-.home .hero{
-    min-height: 60vh;
-    background: url(about\ image.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-  }
-  .home .row{
-    margin:0;
-  }
-  
-  .home .hero .text1{
-    font-size: 5rem;
-    width:40rem;
-    background:#ff7a00;
-    padding:1rem;
-    text-align: center;
-    opacity: .8;
-  }
-  
-  .home .hero .text2{
-    font-size: 3rem;
-    width:35rem;
-    background:var(--orange);
-    padding:1rem;
-    text-align: center;
-    opacity: .8;
-    margin-top: 1rem;
-    color:#fff;
-  }  
+
 
 /* Hero section */
 .hero{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('architecture-hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('about\ image.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
