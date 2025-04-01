@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability & Innovation | Arcodeon Architects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-container">
+          <a href="index.html" class="logo">
+            <span>🏠</span> Arcodeon
+          </a>
+          
+          <button class="menu-toggle" id="menuToggle">
+            ☰
+          </button>
+          
+          <nav>
+            <ul class="nav-list" id="navList">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About Us</a></li>
+              <li><a href="services.html" class="nav-link">Services</a></li>
+              <li><a href="projects.html" class="nav-link">Projects</a></li>
+              <li><a href="sustainability.html" class="nav-link">Sustainability</a></li>
+              <li><a href="blog.html" class="nav-link">Blog</a></li>
+              <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+      <script>
+        // Mobile menu toggle functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const navList = document.getElementById('navList');
+        const header = document.getElementById('header');
+        
+        menuToggle.addEventListener('click', () => {
+          navList.classList.toggle('active');
+          menuToggle.textContent = navList.classList.contains('active') ? '✕' : '☰';
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        });
+      </script>
+
+    <main class="sustainability-page">
+        <section class="sustainability-hero">
+            <div class="container">
+                <h1>Sustainability & Innovation</h1>
+                <p>Designing for a Greener Tomorrow, Innovating for a Smarter Future</p>
+            </div>
+        </section>
+
+        <section class="sustainability-intro">
+            <div class="container">
+                <p>We believe that architecture should not only be visually stunning but also environmentally responsible and future-ready. Our approach focuses on creating energy-efficient, eco-friendly, and technologically advanced structures that harmonize with nature while enhancing quality of life.</p>
+            </div>
+        </section>
+
+        <section class="sustainability-approach">
+            <div class="container">
+                <h2>Our Sustainability Approach</h2>
+                <p class="section-subtitle">Green Architecture That Respects the Planet</p>
+                
+                <div class="approach-grid">
+                    <div class="approach-item">
+                        <h3>Energy-Efficient Designs</h3>
+                        <ul>
+                            <li>Passive solar design for natural heating & cooling</li>
+                            <li>High-performance insulation & energy-efficient façades</li>
+                            <li>LED lighting & automated energy management</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="approach-item">
+                        <h3>Renewable Energy Integration</h3>
+                        <ul>
+                            <li>Solar panels & wind energy solutions</li>
+                            <li>Net-zero energy buildings & off-grid systems</li>
+                            <li>Smart grids & battery storage solutions</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="approach-item">
+                        <h3>Eco-Friendly Materials</h3>
+                        <ul>
+                            <li>Locally sourced & recycled materials</li>
+                            <li>Low-carbon concrete & sustainable wood</li>
+                            <li>Green roofs & vertical gardens</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="approach-item">
+                        <h3>Water Conservation</h3>
+                        <ul>
+                            <li>Rainwater harvesting & greywater recycling</li>
+                            <li>Smart irrigation systems</li>
+                            <li>Zero-waste construction practices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="innovation">
+            <div class="container">
+                <h2>Innovation in Architecture</h2>
+                <p class="section-subtitle">Smart, Connected, and Future-Forward Designs</p>
+                
+                <div class="innovation-grid">
+                    <div class="innovation-item">
+                        <h3>Smart Building Technologies</h3>
+                        <ul>
+                            <li>AI-powered climate control & lighting</li>
+                            <li>IoT-enabled security systems</li>
+                            <li>Real-time energy monitoring</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="innovation-item">
+                        <h3>3D Printing & Modular Construction</h3>
+                        <ul>
+                            <li>Faster, cost-effective building solutions</li>
+                            <li>Prefabricated modular units</li>
+                            <li>Advanced robotic construction</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="innovation-item">
+                        <h3>Digital Twin & BIM Integration</h3>
+                        <ul>
+                            <li>Real-time simulations & analytics</li>
+                            <li>Precise design & execution</li>
+                            <li>AI-driven space optimization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="innovation-item">
+                        <h3>Urban Innovation</h3>
+                        <ul>
+                            <li>Smart urban planning</li>
+                            <li>Integrated green infrastructure</li>
+                            <li>Sustainable public spaces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-sustainability">
+            <div class="container">
+                <h2>Why Sustainability & Innovation Matter?</h2>
+                <ul class="benefits-list">
+                    <li>Future-Ready Designs that evolve with time</li>
+                    <li>Eco-Conscious Living with reduced carbon footprints</li>
+                    <li>Cost Efficiency through energy-efficient solutions</li>
+                    <li>Health & Well-Being with better air quality and lighting</li>
+                    <li>Global Responsibility for sustainable development</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sustainability-projects">
+            <div class="container">
+                <h2>Sustainable Projects</h2>
+                <div class="projects-grid">
+                    <!-- Featured sustainable projects would go here -->
+                    <div class="project">
+                        <img src="https://wtop.com/wp-content/uploads/2021/02/USGBC-HQ-LEED-Platinum-e1613400393931.jpg" alt="Eco Building">
+                        <h3>Green Office Complex</h3>
+                        <p>LEED Platinum Certified</p>
+                    </div>
+                    <div class="project">
+                        <img src="https://media.istockphoto.com/id/1272706059/photo/solar-panels-on-the-building-roof.jpg?s=1024x1024&w=is&k=20&c=J66XDy5ERJR6fJLjJ3Vvjqye5KoyeQRiGjn116kcwQU=" alt="Solar Residence">
+                        <h3>Net-Zero Energy Home</h3>
+                        <p>100% Solar Powered</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Let's Build a Sustainable Future Together</h2>
+                <p>We're committed to making a lasting impact through smarter, greener spaces.</p>
+                <a href="contact.html" class="cta-button">Discuss Your Sustainable Project</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Arcodeon Architects is a forward-thinking architectural firm specializing in sustainable, innovative, and future-ready designs.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@arcodeon.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Arcodeon Architects. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

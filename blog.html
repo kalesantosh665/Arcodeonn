@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Arcodeon Architects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-container">
+          <a href="index.html" class="logo">
+            <span>🏠</span> Arcodeon
+          </a>
+          
+          <button class="menu-toggle" id="menuToggle">
+            ☰
+          </button>
+          
+          <nav>
+            <ul class="nav-list" id="navList">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About Us</a></li>
+              <li><a href="services.html" class="nav-link">Services</a></li>
+              <li><a href="projects.html" class="nav-link">Projects</a></li>
+              <li><a href="sustainability.html" class="nav-link">Sustainability</a></li>
+              <li><a href="blog.html" class="nav-link">Blog</a></li>
+              <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+      <script>
+        // Mobile menu toggle functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const navList = document.getElementById('navList');
+        const header = document.getElementById('header');
+        
+        menuToggle.addEventListener('click', () => {
+          navList.classList.toggle('active');
+          menuToggle.textContent = navList.classList.contains('active') ? '✕' : '☰';
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        });
+      </script>
+
+    <main class="blog-page">
+        <section class="blog-hero">
+            <div class="container">
+                <h1>Arcodeon Architects Blog</h1>
+                <p>Insights, Trends, and Innovations in Architecture & Design</p>
+            </div>
+        </section>
+
+        <section class="blog-intro">
+            <div class="container">
+                <p>Explore the latest trends, expert insights, and groundbreaking innovations in the world of architecture. Whether you're an architect, designer, developer, or enthusiast, our blog serves as a hub of knowledge and inspiration.</p>
+            </div>
+        </section>
+
+        <section class="featured-articles">
+            <div class="container">
+                <h2>Featured Articles</h2>
+                
+                <div class="articles-grid">
+                    <article class="blog-post">
+                        <img src="smart city.webp" alt="Smart Cities">
+                        <div class="post-content">
+                            <h3>The Future of Architecture: Smart & Sustainable Cities</h3>
+                            <p class="post-meta">Published on June 15, 2023 | Category: Urban Design</p>
+                            <p class="post-excerpt">Learn how AI, IoT, and green infrastructure are transforming city planning to create efficient, eco-conscious spaces.</p>
+                            <a href="smart-cities-article.html" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-post">
+                        <img src="https://i.pinimg.com/originals/42/24/44/422444e1309040fcd0b19a92308e94eb.jpg" alt="Eco Architecture">
+                        <div class="post-content">
+                            <h3>Eco-Friendly Architecture: Building a Greener Tomorrow</h3>
+                            <p class="post-meta">Published on May 22, 2023 | Category: Sustainability</p>
+                            <p class="post-excerpt">Explore low-carbon materials, passive solar design, and water-efficient solutions combating climate change.</p>
+                            <a href="eco-architecture-article.html" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-post">
+                        <img src="http://2.bp.blogspot.com/-6puRWRY2UGY/UeeGtTaUACI/AAAAAAAAAto/hmFQyMpD0d8/s1600/luxury+homes4.jpg" alt="Luxury Homes">
+                        <div class="post-content">
+                            <h3>Luxury Homes of the Future: Smart, Stylish & Sustainable</h3>
+                            <p class="post-meta">Published on April 10, 2023 | Category: Residential</p>
+                            <p class="post-excerpt">Discover how biophilic design, home automation, and energy-efficient materials shape modern dream homes.</p>
+                            <a href="luxury-homes-article.html" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-post">
+                        <img src="https://static.skillshare.com/uploads/discussion/tmp/fb5e5da6.jpg" alt="Design Styles">
+                        <div class="post-content">
+                            <h3>Minimalist vs. Maximalist: Finding Your Architectural Style</h3>
+                            <p class="post-meta">Published on March 5, 2023 | Category: Design</p>
+                            <p class="post-excerpt">Explore the core principles, aesthetic appeal, and functionality of both design philosophies.</p>
+                            <a href="design-styles-article.html" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-categories">
+            <div class="container">
+                <h3>Browse by Category</h3>
+                <div class="categories">
+                    <a href="#" class="category">Sustainability</a>
+                    <a href="#" class="category">Urban Design</a>
+                    <a href="#" class="category">Residential</a>
+                    <a href="#" class="category">Commercial</a>
+                    <a href="#" class="category">Technology</a>
+                    <a href="#" class="category">Design Trends</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get exclusive updates and insights directly in your inbox.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="social-connect">
+            <div class="container">
+                <h3>Join the Conversation</h3>
+                <p>Follow us on social media for daily inspiration and industry updates.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="icons8-facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="icons8-instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="icons8-linkedin.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="icons8-twitter.svg" alt="Facebook"></a>
+                    <a href="#"><img src="icons8-youtube.svg" alt="Instagram"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Arcodeon Architects is a forward-thinking architectural firm specializing in sustainable, innovative, and future-ready designs.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@arcodeon.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Arcodeon Architects. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

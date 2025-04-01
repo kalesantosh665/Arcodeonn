@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | Arcodeon Architects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-container">
+          <a href="index.html" class="logo">
+            <span>🏠</span> Arcodeon
+          </a>
+          
+          <button class="menu-toggle" id="menuToggle">
+            ☰
+          </button>
+          
+          <nav>
+            <ul class="nav-list" id="navList">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About Us</a></li>
+              <li><a href="services.html" class="nav-link">Services</a></li>
+              <li><a href="projects.html" class="nav-link">Projects</a></li>
+              <li><a href="sustainability.html" class="nav-link">Sustainability</a></li>
+              <li><a href="blog.html" class="nav-link">Blog</a></li>
+              <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+      <script>
+        // Mobile menu toggle functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const navList = document.getElementById('navList');
+        const header = document.getElementById('header');
+        
+        menuToggle.addEventListener('click', () => {
+          navList.classList.toggle('active');
+          menuToggle.textContent = navList.classList.contains('active') ? '✕' : '☰';
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        });
+      </script>
+
+    <section class="projects-hero">
+        <div class="container">
+            <h1>Our Projects</h1>
+            <p>Building Iconic Structures, Creating Lasting Legacies</p>
+        </div>
+    </section>
+
+    <section class="projects-intro">
+        <div class="container">
+            <p>Every project is a testament to our commitment to innovation, functionality, and sustainability. From luxurious residences to large-scale urban developments, we design and execute world-class architectural marvels that redefine spaces and enhance communities.</p>
+        </div>
+    </section>
+
+    <section class="project-filters">
+        <div class="container">
+            <button class="filter-button active" data-filter="all">All Projects</button>
+            <button class="filter-button" data-filter="residential">Residential</button>
+            <button class="filter-button" data-filter="commercial">Commercial</button>
+            <button class="filter-button" data-filter="urban">Urban Planning</button>
+            <button class="filter-button" data-filter="restoration">Restoration</button>
+        </div>
+    </section>
+
+    <section class="projects-grid">
+        <div class="container">
+            <div class="projects-container">
+                <div class="project residential">
+                    <img src="https://content.jdmagicbox.com/comp/ernakulam/v1/0484px484.x484.170113033330.p4v1/catalogue/skyline-ranch-thrippunithura-ernakulam-dsvj2t7obw.jpg" alt="Skyline Villa">
+                    <div class="project-info">
+                        <h3>Skyline Villa</h3>
+                        <p class="location">Chennai, India</p>
+                        <p class="description">A modern minimalist villa with floor-to-ceiling glass panels, open-plan living spaces, and smart home integration.</p>
+                        <ul class="features">
+                            <li>Sustainable energy solutions</li>
+                            <li>Intelligent home automation</li>
+                            <li>Seamless indoor-outdoor connectivity</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project residential">
+                    <img src="https://housing-images.n7net.in/4f2250e8/05149aa5d148f66a9b032e27fbedd14e/v0/medium/saravana_tranquil_heights-vidyaranyapura-bengaluru-saravana_buildwell.jpeg" alt="Tranquil Heights">
+                    <div class="project-info">
+                        <h3>Tranquil Heights</h3>
+                        <p class="location">Bangalore, India</p>
+                        <p class="description">A high-end residential apartment complex designed to balance urban living with natural serenity.</p>
+                        <ul class="features">
+                            <li>Contemporary façade with premium interiors</li>
+                            <li>Rooftop infinity pool & wellness center</li>
+                            <li>Eco-friendly features</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project commercial">
+                    <img src="https://im.proptiger.com/1/1559945/6/nexus-heights-elevation-9412874.jpeg" alt="Nexus Tower">
+                    <div class="project-info">
+                        <h3>Nexus Tower</h3>
+                        <p class="location">Mumbai, India</p>
+                        <p class="description">A state-of-the-art commercial building with smart office spaces and energy-efficient technology.</p>
+                        <ul class="features">
+                            <li>LEED-certified sustainable design</li>
+                            <li>High-speed elevators & futuristic workspaces</li>
+                            <li>Automated climate control</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project urban">
+                    <img src="https://static.zawya.com/view/acePublic/alias/contentid/e9ebec4d-f75e-4016-bedd-7d1f991bbbfe/0/aziziemerald-dhcc-jpg.webp" alt="Emerald Smart City">
+                    <div class="project-info">
+                        <h3>Emerald Smart City Project</h3>
+                        <p class="location">Dubai, UAE</p>
+                        <p class="description">A futuristic urban space designed with self-sustaining energy systems and AI-driven traffic management.</p>
+                        <ul class="features">
+                            <li>Renewable energy sources</li>
+                            <li>AI-powered smart transportation</li>
+                            <li>Eco-friendly districts</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project restoration">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D12AQEqgIZsdJreqw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1690478295519?e=2147483647&v=beta&t=2w6lDO4qh9niaLFqYzGpxez8KEh10l3dfVp_tUH7cIg" alt="Royal Heritage Palace">
+                    <div class="project-info">
+                        <h3>The Royal Heritage Palace</h3>
+                        <p class="location">Rajasthan, India</p>
+                        <p class="description">A historic palace restoration project that merges traditional craftsmanship with modern amenities.</p>
+                        <ul class="features">
+                            <li>Conservation of ancient murals</li>
+                            <li>Integration of luxury suites</li>
+                            <li>Use of traditional materials</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-highlights">
+        <div class="container">
+            <h2>Why Our Projects Stand Out?</h2>
+            <ul class="highlights-list">
+                <li>Bespoke Architectural Excellence – Every project is uniquely tailored</li>
+                <li>Sustainable & Smart Designs – Green architecture and smart technology</li>
+                <li>Aesthetic Meets Functionality – Blend of modern aesthetics and livability</li>
+                <li>Award-Winning Innovations – Recognized for design excellence</li>
+                <li>Client Satisfaction & Collaboration – Your aspirations come to life</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Let's Build Something Extraordinary</h2>
+            <p>From luxurious residences to large-scale urban developments, we're your trusted partner.</p>
+            <a href="contact.html" class="cta-button">Discuss Your Next Project</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Arcodeon Architects is a forward-thinking architectural firm specializing in sustainable, innovative, and future-ready designs.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@arcodeon.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="icons8-facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="icons8-instagram.svg" alt="Instagram"></a>
+                        <a href="#"><img src="icons8-linkedin.svg" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Arcodeon Architects. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
